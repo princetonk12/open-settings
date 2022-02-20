@@ -4,6 +4,12 @@
   "homepage": "https://princetonk12.github.io/open-settings",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/inter": "^4.5.4",
+    "@mui/material": "^5.4.2",
+    "@primer/octicons-react": "^16.3.1",
+    "@primer/react": "^34.5.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -11,6 +17,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -19,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
-    "predeploy": "yarn build",
+    "predeploy": "yarn build"
   },
   "eslintConfig": {
     "extends": [
