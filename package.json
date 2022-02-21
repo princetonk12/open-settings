@@ -1,7 +1,6 @@
 {
   "name": "open-settings",
   "version": "0.1.0",
-  "homepage": "https://princetonk12.github.io/open-settings",
   "private": true,
   "dependencies": {
     "corrosion": "^1.0.0"
