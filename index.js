@@ -1,4 +1,5 @@
 // https here is necesary for some features to work, even if this is going to be behind an SSL-providing reverse proxy.
+require('dotenv').config()
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
@@ -18,7 +19,9 @@ const proxy = new Corrosion({
 
 proxy.bundleScripts();
 
+console.log(process.env.PORT)
+
 server.on('request', (request, response) => {
     if (request.url.startsWith(proxy.prefix)) return proxy.request(request, response);
     response.end(fs.readFileSync(__dirname + '/index.html', 'utf-8'));
-}).on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(clientRequest, clientSocket, clientHead)).listen(PORT); // port other than 443 if it is needed by other software.
+}).on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(clientRequest, clientSocket, clientHead)).listen(process.env.PORT); // port other than 443 if it is needed by other software.
