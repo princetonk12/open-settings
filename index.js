@@ -1,5 +1,5 @@
 // https here is necesary for some features to work, even if this is going to be behind an SSL-providing reverse proxy.
-const https = require('https');
+const https = require('http');
 const fs = require('fs');
 const path = require('path');
 const Corrosion = require('corrosion');
