@@ -1,8 +1,7 @@
-<br/>
 <div align="center">
   <br/>
   <br/>
-  <h2>OPEN-SETTINGS</h2>
+  <h3>OPEN-SETTINGS</h3>
   <div>
   A web proxy that allows users to <br/> bypass firewalls on the local network.
   </div>
