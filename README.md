@@ -12,4 +12,4 @@
 ----
 Full documentation and application is available on the website:
 
-open-settings.herokuapp.com
+[Website Link](open-settings.herokuapp.com)
